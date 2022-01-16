@@ -1,0 +1,118 @@
+@import 'styles/shared.scss';
+
+.diagram {
+  // position: relative;
+  @media screen and (min-width: $tablet) {
+    width: 666px;
+    margin: 0 auto;
+    margin-bottom: 76px;
+    padding-top: 20px;
+    padding-left: 32px;
+    padding-bottom: 19px;
+    padding-right: 29px;
+
+    background: $mainLight-color;
+    box-shadow: 0px 10px 60px rgba(170, 178, 197, 0.2);
+    border-radius: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 1060px;
+    padding-top: 20px;
+    padding-left: 151px;
+    padding-bottom: 19px;
+    padding-right: 151px;
+  }
+}
+
+.diagramLarge {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $mainLight-color;
+  box-shadow: 0px 10px 60px rgba(170, 178, 197, 0.2);
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-bottom: 18px;
+  width: 100%;
+  @media screen and (min-width: $tablet) {
+    min-height: 130px;
+  }
+  @media screen and (min-width: $desktop) {
+    // margin-bottom: 200px;
+  }
+}
+.diagram_emptyTitle {
+  text-align: center;
+}
+
+.diagram__buttonPie {
+  border: none;
+  background-color: transparent;
+  width: 36px;
+  height: 36px;
+  opacity: 60%;
+  display: inline-block;
+  cursor: pointer;
+
+  @media screen and (min-width: $desktop) {
+    &:hover {
+      color: $mainAccent-color;
+    }
+    &:focus {
+      color: $mainAccent-color;
+    }
+  }
+}
+
+.diagram__buttonColumn {
+  border: none;
+  background-color: transparent;
+  width: 36px;
+  height: 36px;
+  opacity: 60%;
+  display: none;
+  cursor: pointer;
+  @media screen and (min-width: $tablet) {
+    display: inline-block;
+  }
+  @media screen and (min-width: $desktop) {
+    display: inline-block;
+    &:hover {
+      color: $mainAccent-color;
+    }
+    &:focus {
+      color: $mainAccent-color;
+    }
+  }
+}
+
+// горизонтвльно
+.diagram__buttonBar {
+  border: none;
+  background-color: transparent;
+  width: 36px;
+  height: 36px;
+  opacity: 60%;
+  display: inline-block;
+  transform: rotate(90deg);
+  cursor: pointer;
+  @media screen and (min-width: $tablet) {
+    display: none;
+    &:hover {
+      color: $mainAccent-color;
+    }
+    &:focus {
+      color: $mainAccent-color;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+    &:hover {
+      color: $mainAccent-color;
+    }
+    &:focus {
+      color: $mainAccent-color;
+    }
+  }
+}
